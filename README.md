@@ -1,6 +1,4 @@
-================================================================================
-CORK - MINIMAL COMMAND RUNNER
-================================================================================
+# CORK - MINIMAL COMMAND RUNNER
 
 1. OVERVIEW
 Cork is a lightweight, minimal command runner written in C. It parses a 
@@ -11,14 +9,14 @@ evaluate variables.
 Compile the source code using a standard C compiler. It is compatible with both 
 POSIX and Windows environments.
 
-    gcc -o cork cork.c
+       gcc -o cork cork.c
 
 3. USAGE
 Execute the compiled binary from the directory containing your "Corkfile".
 
-    cork <command>      Execute the specified command block.
-    cork -c, --cmds     List all available commands defined in the Corkfile.
-    cork -h, --help     Display usage instructions.
+       cork <command>      Execute the specified command block.
+       cork -c, --cmds     List all available commands defined in the Corkfile.
+       cork -h, --help     Display usage instructions.
 
 4. CORKFILE SYNTAX
 The "Corkfile" must adhere to the following formatting rules:
@@ -34,14 +32,14 @@ The "Corkfile" must adhere to the following formatting rules:
   * Comments:  Lines beginning with '#' are strictly ignored.
 
 5. EXAMPLE CORKFILE
-# Variable declarations
+### Variable declarations
 compiler=gcc
+
 target=program
 
-# Command definitions
+### Command definitions
 build:
     ${compiler} -o ${target} main.c
 
 clean:
-    rm -f ${target}
-================================================================================
+    rm -f ${target}g
