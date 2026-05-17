@@ -8,10 +8,10 @@ Cork is a minimal command runner. You define variables and commands in a file ca
 
 ## Installation
 
-You need a C compiler. Run:
+You need a C compiler and `make`. Run:
 
 ```sh
-gcc -std=c11 -Wall -o cork cork.c
+make
 ```
 
 Then move the binary somewhere on your `PATH`, such as `/usr/local/bin`:
